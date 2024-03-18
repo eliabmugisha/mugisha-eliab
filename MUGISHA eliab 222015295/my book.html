@@ -1,0 +1,194 @@
+<html>
+<head>
+	<title>my book</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<body>
+<p>
+        <a href="./home.html">HOME</a>
+        <a href="./about.html">ABOUT</a>
+        <a href="./contact.html">CONTACT</a>
+        <a href="./services.html">SERVICES</a>
+        <a href="./form.html">FORM</a>
+        <a href="./table.html">TABLE</a>
+        <a href="./my book.html">MY BOOK</a>
+    </p>
+	<h1>DATABASE AND JAVA airline_online_ticket_booking  </h1>
+	<ol><h2><u><li>DATABASE</li></u></h2>
+		<p>Database name used: <b>airline_online_ticket_booking.</b></p>
+		<ul type="square"><h3><u><i><li>Tables</li></i></u></h3>
+
+
+			<ol><li><b>Admin Table</b></li>
+
+			<p>Admin table database structure This is table is table that will be only created by admin and will hold other system users apart from admin  will give them email and password that they will use to login and access the project or system, and also t used to register if she/he’s don’t have an account so once you must to create account in order to login and access or use the system.
+            Note: the created Admin will not have same ability and right in the system.</p></br>
+
+			<li><b>Airport Table</b></li>
+			<p>Airport table: This table stores information about airports such as airport code, name, location, and possibly other relevant details. It helps in managing the list of airports available for departure and arrival locations when users search for flights.</p></br>
+
+			
+
+
+			<li><b>Flight Table</b></li>
+			<p>Flight table: This table holds data about individual flights, including flight number, departure airport, arrival airport, departure time, arrival time, duration, and possibly other flight-related details. It is crucial for users to search for available flights and make reservations.</p></br>
+
+			
+			<li><b>Reservation Table</b></li>
+			<p>Reservation table: This table manages reservations made by users for specific flights. It includes data such as reservation ID, user ID, flight ID, seat number, reservation status, and possibly other reservation-related information. It helps in tracking and managing user bookings.</p></br>
+
+			
+
+            <li><b>Payment  Table</b></li>
+            <p> Payment table: This table contains information related to payment transactions made by           users for booking flights. It includes data such as payment ID, amount, payment method, transaction status, and possibly other details necessary for payment processing and tracking.</p></br>
+
+			
+
+			<li><b>User Table</b></li></ol>
+			<p>User table: This table stores information about users who interact with the airline booking system. It includes data such as user ID, name, email, phone number, username, password (hashed), and possibly other user-related details. It facilitates user authentication, account management, and personalized services.</p></br>
+
+			
+
+			<h3><u><i><li>Attributes</li></i></u></h3>
+
+			      <b>Attributes of Admin Table</b></br>
+    Here are the descriptions or purposes of the attributes/columns used in Admin table:</br>
+
+    <p><b><i>fname, lname:</i></b> The columns which are represents first name and last name of user.</br></p> 
+
+    <p><b><i>phone:</i></b> The column which are represents telephone number of user.</br></p>
+
+    <p><b><i>gender:</i></b> The column which are represents or store gender of user like female and male.</br></p> 
+
+    <p><b><i>martial_status:</i></b> The column which are represents  martial status of user like single,married,divorced,…..</br></p>  
+
+    <p><b><i>DoB:</i></b> The column which are represents Date of Birth of user.</br></p>
+
+    <p><b><i>Email:</i></b> The column which are represents Email of given user.</br></p>
+
+    <p><b><i>Password:</i></b> The column which are represents  password of the user.</br></p>
+
+
+    <b>Attributes of Airport Table</b></br>
+    Here are the descriptions or purposes of the attributes/columns used in Airport table:</br>
+
+    <p><b><i>airport_id:</i></b> The column which are represents  id of airport which is unique value called PRIMARY. It is set to auto-increment (AUTO_INCREMENT).</br></p> 
+
+    <p><b><i>airport_code:</i></b> The column which are represents  code of airport when passenger needs  to booking ticket.</br></p>
+
+    <p><b><i>ccouuntryy:</i></b> The column which are represents  the country passenger wants to arrive or leave.</br></p>
+
+     <b>Attributes of Flight  Table</b></br>
+    Here are the descriptions or purposes of the attributes/columns used in Flight  table:</br>
+
+    <p><b><i>flight_id:</i></b> The column which are represents  id of flight which is unique value called PRIMARY. It is set to auto-increment (AUTO_INCREMENT).</br></p> 
+
+    <p><b><i>flight_number:</i></b> The column which are represents  the number of flight to airport.</br></p>
+
+    <p><b><i>departure_city:</i></b> : The column which are represents  city location of  passengers leave to flight.</br></p> 
+
+    <p><b><i>arrival_city:</i></b> The column which are represents  city location of  passengers arrive to flight.</br></p>  
+
+    <p><b><i>departuure_time:</i></b> The column which are represents  time/hours of  passengers leave to flight.</br></p>
+
+    <p><b><i>arrival_time:</i></b> The column which are represents  time/hours of  passengers arrive to flight.
+
+</br></p>
+
+    <p><b><i>aircraft:</i></b> The column which are represents the type or name of air plane may example  is boingi, kajugujugu.</br></p>
+
+    <b>Attributes of Reservation Table</b></br>
+    Here are the descriptions or purposes of the attributes/columns used in Reservation  table:</br>
+
+    <p><b><i>reservation_id:</i></b> The column which are represents  id of reservation  which is unique value called PRIMARY. It is set to auto-increment (AUTO_INCREMENT).</br></p> 
+
+    <p><b><i>user_idd:</i></b> The column which are represents  id of user which is unique value called PRIMARY  also it must used in reservation table to references for user table.</br></p>
+
+    <p><b><i>flight_id:</i></b> : The column which are represents  id of flight  which is unique value called PRIMARY also it must used in reservation table to references for flight table.</br></p> 
+
+    <p><b><i>passenger_name:</i></b> : The column which are represents  the name of the passengers to reservation in order to book ticket.</br></p>  
+
+     <p><b><i>aircraft:</i></b> The column which are represents the type or name of air plane may example  is boingi, kajugujugu.</br></p>
+
+
+      <b>Attributes of Payment  Table</b></br>
+    Here are the descriptions or purposes of the attributes/columns used in Payment  table:</br>
+
+    <p><b><i>payment_id:</i></b> The column which are represents  id of payment  which is unique value called PRIMARY. It is set to auto-increment (AUTO_INCREMENT).</br></p> 
+
+    <p><b><i>reservation_id:</i></b> The column which are represents  id of reservation for passengers to the payment which  is references to the reservation table value called FOREIGN KEY.  It is a column of reservation table  which has relationship between payment   table.</br></p>
+
+    <p><b><i>transaction_amount:</i></b> : The column which are represents  the total amount of money to pay for transaction to every booking ticket to payment.</br></p> 
+
+    <p><b><i>payment_method:</i></b> : The column which are represents  the different methods of payment by passengers can used to pay like using momo pay, mobile money, master card.</br></p>  
+
+
+    <b>Attributes of User   Table</b></br>
+    Here are the descriptions or purposes of the attributes/columns used in User table:</br>
+
+    <p><b><i>user_id:</i></b> The column which are represents  id of reservation  which is unique value called PRIMARY. It is set to auto-increment (AUTO_INCREMENT).</br></p> 
+
+    <p><b><i>user_name:</i></b> : The column which are represents  the name of the user should use for accessing the system.</br></p>
+
+    <p><b><i> password:</i></b> : The column which are represents  password of the user.</br></p> 
+
+    <p><b><i>telephone:</i></b> : The column which are represents telephone number of user. </br></p>  
+
+
+   
+
+   
+			            
+        </ul>
+		<h2><u><li>JAVA</li></u></h2>
+		
+		<ul type="square"><h3><u><i><li>Description</li></i></u></h3>
+
+
+			<ol><li><b> Introduction </b></li></ol>
+<p> In this chapter I will be describing how powerful generalpurpose programming language was used to create the analyzed system. Under this chapter I will undergo full detail of how everything will function together with database that have been describe above and how it cope with full analyzed system.</p> 
+<li><b>Tools used to develop this system in java programming </b></li>
+<p>Eclipse IDE: an integrated development environment used in computer programming. It contains a base workspace and an extensible plug-in system for customizing the environment. It is the second-most-popular IDE for Java development, and was the most popular. JAR stands for Java Archive. It's a file format based on the popular ZIP file format and is used for aggregating many files into one. Although JAR can be used as a general archiving tool, the primary motivation for its development was so that Java applets and their requisite components. 
+MySQL Connectors: MySQL provides standards-based drivers for JDBC, ODBC, and .Net enabling developers to build database applications in their language</p> 
+
+
+			              <h3><u><i><li>Forms and Images</li></i></u></h3>
+
+			              <b><i>registration Form</i></b></br>
+			              <img src="registration.PNG"width=900 height=300>
+
+			               <h3><u><i><li>Forms and Images</li></i></u></h3>
+
+			              <b><i>Airport Form</i></b></br>
+			              <img src="Airport.PNG"width=900 height=300>
+
+			               <h3><u><i><li>Forms and Images</li></i></u></h3>
+
+			              <b><i>Flight Form</i></b></br>
+			              <img src="Flight.PNG"width=900 height=300>
+
+			               <h3><u><i><li>Forms and Images</li></i></u></h3>
+
+			              <b><i>RESERVATION Form</i></b></br>
+			              <img src="Reservation.PNG"width=900 height=300>
+
+			               <h3><u><i><li>Forms and Images</li></i></u></h3>
+
+			              <b><i>PAYMENT Form</i></b></br>
+			              <img src="PAYMENT.PNG"width=900 height=300>
+
+			               <h3><u><i><li>Forms and Images</li></i></u></h3>
+
+			              <b><i>USER Form</i></b></br>
+			              <img src="USER.PNG"width=900 height=300>
+
+
+
+
+        </ul>
+		
+	</ol>
+	<marquee><u><i><h2 style="color: white;">Prepared By</i></u>: MUGISHA Eliab</h2></marquee>
+	</body>
+	</html>
